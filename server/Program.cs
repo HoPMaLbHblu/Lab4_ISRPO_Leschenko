@@ -8,7 +8,7 @@ System.Console.WriteLine("2 — Показать группу");
 System.Console.WriteLine("3 — Показать дату");
 System.Console.WriteLine("4 — Выход");
 
-string choice = Console.ReadLine();
+string? choice = Console.ReadLine();
 
 if (choice == "1")
 {
@@ -25,4 +25,8 @@ else if (choice == "3")
 else if (choice == "4")
 {
     return;
+}
+else
+{
+    System.Console.WriteLine("Цифру от 1 до 4!");
 }
